@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "vuetify": "^3.8.1"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47"
   }
 }

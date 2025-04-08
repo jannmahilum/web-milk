@@ -33,27 +33,31 @@
     subtitle="High-quality Milk"
     
   >
-<v-img src="/img/logo.png" height="200"></v-img>
 
+  <v-img src="/img/logo.png" height="200"></v-img>
     <template v-slot:title>
       <span class="font-weight-black">Welcome to Pasteurized Milk</span>
     </template>
 
     <v-card-text class="bg-surface-light pt-4">
         <v-form fast-fail @submit.prevent>
+            <v-text-field label="Firstname" variant="outlined"></v-text-field>
+            <v-text-field label="Lastname" variant="outlined"></v-text-field>
             <v-text-field label="Email" variant="outlined"></v-text-field>
 
-      <v-text-field label="Password" type="password" variant="outlined"></v-text-field>
+            <v-text-field label="Password" type="password" variant="outlined"></v-text-field>
+            <v-text-field label="Password Confirmation" type="password" variant="outlined"></v-text-field>
 
-      <v-btn class="mt-2" type="submit" block>Log In</v-btn>
-    </v-form>    
+      <v-btn class="mt-2" type="submit" block>Register</v-btn>
+    </v-form>  
 
-    <v-divider class="my-5"></v-divider>
 
-    <h5>
-    Don't have account? 
-    <RouterLink to="/register">Click here to register</RouterLink>
-    </h5>
+  <v-divider class="my-5"></v-divider> 
+
+   <h5>
+   Already have account?
+   <RouterLink to="/login">Click here to Login</RouterLink>
+   </h5>
     </v-card-text>
   </v-card>
         </v-col>
@@ -61,7 +65,7 @@
         </v-container>
       </v-main>
 
-      <v-footer border app>2024 - Pasteurized Milk </v-footer>
+      <v-footer border app >2024 - Pasteurized Milk </v-footer>
     </v-app>
   </v-responsive>
 </template>
